@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+  
+  		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>zSybxAXFZQhKQl+MZdhR+fprm50=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">WUjA8wmaJzR47jpfxJ6bye5l78jcYQTL/4MiRMmwkeNx6iu+g50/TpxF48bUrQhKmKppYZr4eInnkIOc3yvPGNioSiFj3hiIaYBjFE93NseE3cSZi96U6ThaCU7J2u0HHzBI7wTDABB5kGs3BmSUgh6HqVEzdUOrcmLBzaXI80QS1PhnDFUBqCJQfepytCvZZbWpy4i+VTsYmA0yD89aNr8DosTKjnkl98Dgg+9a3PSkVMCd0RwD3aRI0Ukfw3F6x4UCZrgHfxMIhF3jN/k6p5u457oKSZVUL9KL8a3iXjukntAf5CiHl58Zu9N48Dn2kdjTdHBZT4IRgpa0KRFhYQ==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=NEGOCIACIONES J.C.A S.R.L, OID.2.5.4.97=20378937061, OU=Issued by SENDA TI SOLUTIONS [PE1], OU=GERENCIA, T=GERENTE GENERAL, S=LIMA - LIMA, L=SAN JUAN DE LURIGANCHO, SERIALNUMBER=DNI:25512115, SN=SALINAS IPARRAGUIRRE, G=CALIXTO MANUEL, CN=CALIXTO MANUEL SALINAS IPARRAGUIRRE, E=calixto.salinas@eltriangulo.com.pe</X509SubjectName><X509Certificate>MIIKlTCCCH2gAwIBAgIJV0+p3hbG3wYEMA0GCSqGSIb3DQEBCwUAMIIBIjELMAkGA1UEBhMCUEUxDTALBgNVBAgMBExJTUExDTALBgNVBAcMBExJTUExPTA7BgNVBAsMNHNlZSBjdXJyZW50IGFkZHJlc3MgYXQgd3d3LmNhbWVyZmlybWEuY29tLnBlL2FkZHJlc3MxMDAuBgNVBAsMJ0FDIENBTUVSRklSTUEgUEVSw5ogQ0VSVElGSUNBRE9TIC0gMjAxNjEUMBIGA1UEBRMLMjA1NjYzMDI0NDcxGjAYBgNVBGEMEU5UUlBFLTIwNTY2MzAyNDQ3MSAwHgYDVQQKDBdDQU1FUkZJUk1BIFBFUsOaIFMuQS5DLjEwMC4GA1UEAwwnQUMgQ0FNRVJGSVJNQSBQRVLDmiBDRVJUSUZJQ0FET1MgLSAyMDE2MB4XDTE5MDkyNDE1MjMzOFoXDTIyMDkyMzE1MjMzOFowggGIMTEwLwYJKoZIhvcNAQkBFiJjYWxpeHRvLnNhbGluYXNAZWx0cmlhbmd1bG8uY29tLnBlMSwwKgYDVQQDDCNDQUxJWFRPIE1BTlVFTCBTQUxJTkFTIElQQVJSQUdVSVJSRTEXMBUGA1UEKgwOQ0FMSVhUTyBNQU5VRUwxHTAbBgNVBAQMFFNBTElOQVMgSVBBUlJBR1VJUlJFMRUwEwYDVQQFEwxETkk6MjU1MTIxMTUxHzAdBgNVBAcMFlNBTiBKVUFOIERFIExVUklHQU5DSE8xFDASBgNVBAgMC0xJTUEgLSBMSU1BMRgwFgYDVQQMDA9HRVJFTlRFIEdFTkVSQUwxETAPBgNVBAsMCEdFUkVOQ0lBMSswKQYDVQQLDCJJc3N1ZWQgYnkgU0VOREEgVEkgU09MVVRJT05TIFtQRTFdMRQwEgYDVQRhDAsyMDM3ODkzNzA2MTEiMCAGA1UECgwZTkVHT0NJQUNJT05FUyBKLkMuQSBTLlIuTDELMAkGA1UEBhMCUEUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxkar3Uzgq7nRq2JDzBcIY7yuzj7ejRAN4nEPwcDsKkEwPOblFPzK19WNPXdxA2Dcbwz4f5ICDSqAYgVgjKZpOSGH4TzIy+Nm9j+3yG8xBZBj1NDzYjjvQPbxKr6yUjDZaaWQZIMX1ojLK94/J8UAa6y2TMtwJI3rQ2zZigfiQAoPpWlqkMCMjwqVdc29acxf4JxZSFHw/BeZne9AopGAt2XOStY6lbBx6G+k0E4iTZW9BMXV0lUgXT6m2HEoG0whBysYz7ecJ8zxpVdmh4Pnwtfe7U/Ve6bVl3gFp2kK+TUGSpjw5xwh728tdwpEYT3QzwGrMoFMoHduMQwebf+wjAgMBAAGjggRiMIIEXjAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIGwDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwHQYDVR0OBBYEFKMf/wHnlofc0Mzx3Tcmfr9a2T+GMIGNBggrBgEFBQcBAQSBgDB+MFQGCCsGAQUFBzAChkhodHRwOi8vd3d3LmNhbWVyZmlybWEuY29tL2NlcnRzL2FjX2NhbWVyZmlybWFfcGVydV9jZXJ0aWZpY2Fkb3MtMjAxNi5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3NwLmNhbWVyZmlybWEuY29tMIIBQgYDVR0jBIIBOTCCATWAFDpuZRjnVtLk8y3dpXxybf8w4YYnoYIBEKSCAQwwggEIMQswCQYDVQQGEwJFUzEPMA0GA1UECAwGTUFEUklEMQ8wDQYDVQQHDAZNQURSSUQxQjBABgNVBAsMOXNlZSBjdXJyZW50IGFkZHJlc3MgYXQgaHR0cHM6Ly93d3cuY2FtZXJmaXJtYS5jb20vYWRkcmVzczEjMCEGA1UECwwaQUMgQ0FNRVJGSVJNQSBQRVLDmiAtIDIwMTYxEjAQBgNVBAUTCUE4Mjc0MzI4NzEYMBYGA1UEYQwPVkFURVMtQTgyNzQzMjg3MRswGQYDVQQKDBJBQyBDQU1FUkZJUk1BIFMuQS4xIzAhBgNVBAMMGkFDIENBTUVSRklSTUEgUEVSw5ogLSAyMDE2ggkAjGpF9TOqN0YwgaAGA1UdHwSBmDCBlTBIoEagRIZCaHR0cDovL2NybC5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMEmgR6BFhkNodHRwOi8vY3JsMS5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMIHVBgNVHREEgc0wgcqBImNhbGl4dG8uc2FsaW5hc0BlbHRyaWFuZ3Vsby5jb20ucGWkgaMwgaAxHjAcBgorBgEEAYGHLh4HDA5DQUxJWFRPIE1BTlVFTDEXMBUGCisGAQQBgYcuHggMB1NBTElOQVMxHDAaBgorBgEEAYGHLh4JDAxJUEFSUkFHVUlSUkUxRzBFBgorBgEEAYGHLh4KDDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMBwGA1UdEgQVMBOBEWNhQGNhbWVyZmlybWEuY29tMIGQBgNVHSAEgYgwgYUwgYIGDCsGAQQBgYcuHhAAATByMCkGCCsGAQUFBwIBFh1odHRwczovL3BvbGljeS5jYW1lcmZpcm1hLmNvbTBFBggrBgEFBQcCAjA5DDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMA0GCSqGSIb3DQEBCwUAA4ICAQAhlsVy432ps4Odhi9gtjjJKQCj+mqANfq1K2yfk/hM9LY+0ziiCUfJ7k7yEf70UJL9HLFdvVVYGp/rvpMkSnAgEg2I/JuoB1eWHjjhvL9M26g1qdZbXynM5O4zMAysliAv3uMzmO2NQbbZinhaJOas9Va+n8mvb+CUT2/QnGA7Ki4FdtKjy2X5uZfrb+/+FRgG17IEJNICxt7rhIh5jhwYGzIvvyt0HgA88qxKUSRVE5+dVKqxAEZyBsFUBkNN/i5XPfyS9J2fRA/1xOs9ska+k8AEALKO2l0QDmzHNHqOdkDJeNSDixGTBNQmCcImWgmlccPY6ApnBNL94sxGdo2D0AovkfpPba2CwIHNBUkjMez7++PJObtSPD6kj7sxfD4F1IBBTt94UiezeduWcs9fiy23YNNRGk+stB82qJCpulshPzs6yiYMlZtgmFqYTLaJXd/JYtw8SgSBUvAkDGa57IwjX31kKdM6ED/PgD/t36GT2mQgGUlCIz/QMJNzjAppILorDglY6uNhl1ypW7901a339xY+bh/fIv0xuchQV34qUqjjE73GcY7oS8b8eZXrfoxmwMNLSaDRFSKrqhZqyRZOvLOs6xFFM5WjemzJxCsPw5xL+3y0YDV7Rxun4H/pQSL8XX6HR9Jy4LAGPIoXSCU/7muB+5cRSfSuvmGifw==</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
+  <cbc:ID>B001-00011198</cbc:ID>
+  <cbc:IssueDate>2021-02-27</cbc:IssueDate>
+  <cbc:IssueTime>10:22:49</cbc:IssueTime>  
+  
+  <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="Tipo de Documento" name="Tipo de Operacion" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01" listSchemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51">03</cbc:InvoiceTypeCode>
+					   
+  <cbc:Note languageLocaleID="1000"><![CDATA[SEIS CON 80/100 SOL]]></cbc:Note>
+  <cbc:DocumentCurrencyCode listAgencyName="United Nations Economic Commission for Europe" listID="ISO 4217 Alpha" listName="Currency">PEN</cbc:DocumentCurrencyCode>	
+  <cac:Signature>
+    <cbc:ID>20378937061</cbc:ID>
+	<cbc:Note>Elaborado por el Sistema de Gestión SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20378937061</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[NEGOCIACIONES J.C.A S.R.L]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeAgencyName="PE:SUNAT" schemeID="6" schemeName="Documento de Identidad" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20378937061</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[NEGOCIACIONES J.C.A S.R.L]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CYBER POWER]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+         <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+		 <cbc:CitySubdivisionName><![CDATA[PEREGRINOS]]></cbc:CitySubdivisionName>
+         <cbc:CityName><![CDATA[LIMA]]></cbc:CityName>
+         <cbc:CountrySubentity><![CDATA[LIMA]]></cbc:CountrySubentity>
+		 <cbc:CountrySubentityCode><![CDATA[150117]]></cbc:CountrySubentityCode>
+         <cbc:District><![CDATA[LOS OLIVOS]]></cbc:District>	
+		 <cac:AddressLine>
+			<cbc:Line><![CDATA[CALLE 20 MZA.K LOTE 8 COOP.MANILSA ATE. / AV. GRAN CHIMU NRO. 1988 URB. ZARATE LIMA - LIMA - SAN JUAN DE LURIGANCHO]]></cbc:Line>
+		 </cac:AddressLine>		 
+         <cac:Country>
+          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+         </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>	
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="0" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">-</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CLIENTES VARIOS]]></cbc:RegistrationName>
+		<cac:RegistrationAddress>
+          <cbc:AddressTypeCode>-</cbc:AddressTypeCode>
+		  <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>-</cbc:CityName>
+          <cbc:CountrySubentity>-</cbc:CountrySubentity>
+		  <cbc:CountrySubentityCode><![CDATA[150103]]></cbc:CountrySubentityCode>
+          <cbc:District>-</cbc:District>
+		  <cac:AddressLine>
+			<cbc:Line><![CDATA[-                                                                                                                                                                                                                                                         ]]></cbc:Line>
+		  </cac:AddressLine>	
+          <cac:Country>
+           <cbc:IdentificationCode>PE</cbc:IdentificationCode>      
+          </cac:Country>
+        </cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+    </cac:Party>		
+  </cac:AccountingCustomerParty>
+  
+  <!-- Inicio Tributos cabecera-->	
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">1.04</cbc:TaxAmount>  
+  <!--Tributo ICBPER-->
+	<cac:TaxSubtotal>
+	    <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+	    <cac:TaxCategory>
+	      <cac:TaxScheme>
+	        <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">7152</cbc:ID>
+	        <cbc:Name>ICBPER</cbc:Name>
+	        <cbc:TaxTypeCode>OTH</cbc:TaxTypeCode>
+	      </cac:TaxScheme>
+	    </cac:TaxCategory>
+	</cac:TaxSubtotal> 
+	<!--Tributo ICBPER-->
+   	<cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">5.76</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">1.04</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+</cac:TaxSubtotal>
+                 </cac:TaxTotal>	
+   <!-- Fin Tributos  Cabecera--> 
+ <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">5.76</cbc:LineExtensionAmount>	
+	<cbc:TaxInclusiveAmount currencyID="PEN">6.80</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="PEN">0</cbc:AllowanceTotalAmount>
+	<cbc:ChargeTotalAmount currencyID="PEN">0</cbc:ChargeTotalAmount>	
+	<cbc:PrepaidAmount currencyID="PEN">0.00</cbc:PrepaidAmount>	
+	<cbc:PayableAmount currencyID="PEN">6.80</cbc:PayableAmount>  
+  </cac:LegalMonetaryTotal> 
+  <cac:InvoiceLine>
+<cbc:ID>1</cbc:ID>	 
+	<cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">1.00</cbc:InvoicedQuantity>
+	<cbc:LineExtensionAmount currencyID="PEN">5.76</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">6.80</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+	 </cac:PricingReference>
+	<!-- Inicio Tributos -->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">1.04</cbc:TaxAmount>
+      <!-- ICBPER Tributos -->
+      <cac:TaxSubtotal>        
+        <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>        
+          <cbc:BaseUnitMeasure unitCode="NIU">0</cbc:BaseUnitMeasure>        
+            <cac:TaxCategory>          
+              <cbc:PerUnitAmount currencyID="PEN">0.00</cbc:PerUnitAmount>          
+              <cac:TaxScheme>            
+              <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">7152</cbc:ID>
+              <cbc:Name>ICBPER</cbc:Name>            
+              <cbc:TaxTypeCode>OTH</cbc:TaxTypeCode>          
+            </cac:TaxScheme>        
+          </cac:TaxCategory>      
+      </cac:TaxSubtotal>
+      <!-- ICBPER Tributos -->	  
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">5.76</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">1.04</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>     
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal> 
+    </cac:TaxTotal>	
+	<!-- Fin Tributos -->	
+    <cac:Item>
+      <cbc:Description><![CDATA[BUBBLE TAPE AWESOME 56GR]]></cbc:Description>
+	  <cac:SellersItemIdentification>
+        <cbc:ID>022110079806</cbc:ID>
+	  </cac:SellersItemIdentification>  
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">5.76</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

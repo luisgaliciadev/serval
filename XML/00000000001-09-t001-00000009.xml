@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<DespatchAdvice xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">				       
+  <ext:UBLExtensions> 
+  		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kU13jy6VyMRaDVvA9fz6nPIR2Ko=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">T58hdf3fr8pwteW9mRNBYNeE1YcRkzkgWCwN2b5fyOjXJJ4Y49Afv9znBNhNNeqNWU1fS4TeEN0xsQD1Tw/kTE7KispFmVlp9AU928Cwmpqbkay/1um7J9+Z2DCru/tJ6QYIlZ+N707+DW5Q150LHCjMuZiS1OYu7u7mdH6CoBIzpTuehx0NsJvRhwQdOXpjVRT+ezTb+uVMwLPMJRwMytwrPTnULnCoQbNWZL/JJikAJvaTEj37qK3gEV6IhnWZxV0kyupPncxofXu+JBJm9u87WRnKObeKU1AS82MFPvcnyQamGk122gNxyLKVtZlUnn2iONEmVTKyi+iEppq2QA==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=CORPORACION CYBER POWER S.A.C, OID.2.5.4.97=20538236021, OU=Issued by SENDA TI SOLUTIONS [PE1], OU=SISTEMAS, T=SOPORTE TECNICO, S=LIMA - LIMA, L=LOS OLIVOS, SERIALNUMBER=DNI:43492965, SN=LOPEZ GALLARDO, G=JAIME GONZALO, CN=JAIME GONZALO LOPEZ GALLARDO, E=jaime.lopez@cyberpowerperu.com</X509SubjectName><X509Certificate>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</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>1.0</cbc:CustomizationID>
+  <cbc:ID>T001-00000009</cbc:ID>
+  <cbc:IssueDate>2020-01-20</cbc:IssueDate>   
+  <cbc:DespatchAdviceTypeCode>09</cbc:DespatchAdviceTypeCode>
+  <cbc:Note>VENTA</cbc:Note>  
+  <cac:OrderReference>
+    <cbc:ID>T001-00000009</cbc:ID>
+    <cbc:OrderTypeCode name="Guia de Remision">09</cbc:OrderTypeCode>
+  </cac:OrderReference>   
+  <cac:Signature> 
+    <cbc:ID>20538236021</cbc:ID>
+	<cbc:Note>Elaborado por Sistema de Gestión - SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>  
+  <cac:DespatchSupplierParty>
+    <cbc:CustomerAssignedAccountID schemeID="6">20538236021</cbc:CustomerAssignedAccountID>
+    <cac:Party>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:DespatchSupplierParty>
+  
+  <cac:DeliveryCustomerParty>
+    <cbc:CustomerAssignedAccountID schemeID="6">00000000001</cbc:CustomerAssignedAccountID>
+    <cac:Party>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[PRUEBA DE CLIENTE]]></cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:DeliveryCustomerParty>  
+  <cac:Shipment>
+    <cbc:ID>1</cbc:ID>
+    <cbc:HandlingCode>01</cbc:HandlingCode>
+    <cbc:Information>VENTA</cbc:Information>
+    <cbc:GrossWeightMeasure unitCode="KILOGRAMO">1.00</cbc:GrossWeightMeasure>
+    <cac:ShipmentStage>
+      <cbc:TransportModeCode>01</cbc:TransportModeCode>
+      <cac:TransitPeriod>
+        <cbc:StartDate>2020-01-20</cbc:StartDate>
+      </cac:TransitPeriod>
+      <cac:CarrierParty>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="6">
+          </cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name><![CDATA[00000000001]]></cbc:Name>
+        </cac:PartyName>
+      </cac:CarrierParty>
+      <cac:DriverPerson>
+		<cbc:ID schemeID="0">-</cbc:ID>	
+	  </cac:DriverPerson>  	       
+    </cac:ShipmentStage>
+    <cac:ShipmentStage>
+	    <cac:TransportMeans>
+			<cac:RoadTransport>
+			<cbc:LicensePlateID>-</cbc:LicensePlateID>
+			</cac:RoadTransport>
+		</cac:TransportMeans>
+	</cac:ShipmentStage>
+    <cac:Delivery>
+      <cac:DeliveryAddress>
+        <cbc:ID>150101</cbc:ID>
+        <cbc:StreetName><![CDATA[DIRECCION 1]]></cbc:StreetName>
+      </cac:DeliveryAddress>
+    </cac:Delivery>
+    <cac:TransportHandlingUnit>
+      <cbc:ID>5</cbc:ID>
+    </cac:TransportHandlingUnit>
+    <cac:OriginAddress>
+      <cbc:ID>150117</cbc:ID>
+      <cbc:StreetName><![CDATA[CALLE, LOS ALAMOS 165 OF 302 URB. PEREGRINOS LOS OLIVOS - LIMA]]></cbc:StreetName>
+    </cac:OriginAddress>
+  </cac:Shipment>   <cac:DespatchLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DeliveredQuantity unitCode="NIU">1.00</cbc:DeliveredQuantity>
+    <cac:OrderLineReference>
+      <cbc:LineID>1</cbc:LineID>
+    </cac:OrderLineReference>
+    <cac:Item>
+      <cbc:Name><![CDATA[ADAPTADOR TP-LINCK INALAMBRICO USB]]></cbc:Name>
+      <cac:SellersItemIdentification>
+        <cbc:ID>6</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+  </cac:DespatchLine>
+  </DespatchAdvice>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

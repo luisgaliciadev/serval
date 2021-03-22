@@ -1,0 +1,14 @@
+LPARAMETERS Vlc_cadena
+conex=SQLCONNECT("bppc")
+IF conex > 0 
+	lsql="SELECT * FROM llaves"
+	resp=SQLEXEC(conex, lsql, "llaves")
+	IF resp>0
+		SELECT llaves
+		GO top
+	ENDIF 
+ENDIF 
+
+FOR i=1 TO LEN(Vlc_cadena)
+
+ENDFOR 

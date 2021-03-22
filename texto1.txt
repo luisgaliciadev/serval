@@ -1,0 +1,189 @@
+<TABLE class=form-table cellSpacing=3 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=bgn width="18%">Número de RUC: </TD>
+<TD class=bg colSpan=3>20605620061 - CONSORCIO NUEVO LIMATAMBO</TD></TR>
+<TR>
+<TD class=bgn>Tipo Contribuyente: </TD>
+<TD class=bg colSpan=3>CONTRATOS COLABORACION EMPRESARIAL</TD></TR>
+<TR>
+<TD class=bgn>Nombre Comercial: </TD>
+<TD class=bg>-</TD></TR>
+<TR>
+<TD class=bgn>Fecha de Inscripción: </TD>
+<TD class=bg>09/12/2019</TD>
+<TD class=bgn width="27%">Fecha de Inicio de Actividades:</TD>
+<TD class=bg>05/12/2019</TD></TR>
+<TR>
+<TD class=bgn>Estado del Contribuyente: </TD>
+<TD class=bg>ACTIVO</TD>
+<TD class=bgn></TD></TR>
+<TR>
+<TD class=bgn>Condición del Contribuyente:</TD>
+<TD class=bg>HABIDO </TD></TR>
+<TR>
+<TD class=bgn>Dirección del Domicilio Fiscal:</TD>
+<TD class=bg colSpan=3>AV. REPUBLICA DE COLOMBIA NRO. 791 (FRENTE AL COLEGIO ALFONSO UGARTE) LIMA - LIMA - SAN ISIDRO</TD></TR>
+<TR>
+<TD class=bgn>Sistema de Emisión de Comprobante:</TD>
+<TD class=bg>COMPUTARIZADO</TD>
+<TD class=bgn>Actividad de Comercio Exterior:</TD>
+<TD class=bg>IMPORTADOR/EXPORTADOR</TD></TR>
+<TR>
+<TD class=bgn>Sistema de Contabilidad:</TD>
+<TD class=bg colSpan=3>COMPUTARIZADO</TD></TR>
+<TR><!--I#P_SNADE003-1#20141109#CFS--><!--<td class="bgn" colspan=1>Actividad(es) Econ&oacute;mica(s):</td>-->
+<TD class=bgn>Actividad(es) Económica(s):</TD><!--F#P_SNADE003-1#20141109#CFS-->
+<TD class=bg colSpan=3><!--I#P_SNADE003-1#20141109#CFS--><!-- <select name="select" >--><!--   --><!--   <option value="00" > Principal        - CIIU 45207 - CONSTRUCCION EDIFICIOS COMPLETOS. </option>--><!--   --><!--   --><!--   --><!--   --><!-- </select>	--><SELECT name=select> <OPTION selected value=00>4390 - OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCIÓN</OPTION></SELECT> <!--F#P_SNADE003-1#20141109#CFS--></TD></TR>
+<TR>
+<TD class=bgn>Comprobantes de Pago c/aut. de impresión (F. 806 u 816): </TD>
+<TD class=bg colSpan=3><SELECT name=select> <OPTION selected value=00>GUIA DE REMISION - REMITENTE</OPTION></SELECT> </TD></TR><!--  PCR Inicio Cambios  -->
+<TR>
+<TD class=bgn>Sistema de Emision Electronica: </TD>
+<TD class=bg colSpan=3><SELECT name=select> <OPTION selected value=00>FACTURA PORTAL DESDE 02/01/2020</OPTION></SELECT> </TD></TR><!--  MLR Inicio Cambios P_DSNT_CPLE_0009_5_FE-MASIFICACION-->
+<TR>
+<TD class=bgn>Emisor electrónico desde: </TD>
+<TD class=bg colSpan=3>02/01/2020</TD></TR>
+<TR>
+<TD class=bgn>Comprobantes Electrónicos: </TD>
+<TD class=bg colSpan=3>FACTURA (desde 02/01/2020)</TD></TR><!--  MLR Fin Cambios P_DSNT_CPLE_0009_5_FE-MASIFICACION-->
+<TR>
+<TD class=bgn>Afiliado al PLE desde: </TD>
+<TD class=bg colSpan=3>- </TD></TR><!--  PCR Fin Cambios     -->
+<TR>
+<TD class=bgn>Padrones :</TD>
+<TD class=bg colSpan=3><SELECT name=select> <OPTION selected value=00>NINGUNO</OPTION></SELECT> 
+<DIV id=print style="DISPLAY: none">
+<TABLE class=form-table cellSpacing=2 cellPadding=3 width="100%">
+<TBODY>
+<TR>
+<TD class=t1><FONT size=2>CONSULTA RUC: 20605620061 - CONSORCIO NUEVO LIMATAMBO</FONT></TD></TR></TBODY></TABLE>
+<TABLE class=form-table cellSpacing=3 cellPadding=2 width="100%" border=1>
+<TBODY>
+<TR>
+<TD class=bgn width="18%">Número de RUC: </TD>
+<TD class=bg colSpan=3>20605620061 - CONSORCIO NUEVO LIMATAMBO</TD></TR>
+<TR>
+<TD class=bgn>Tipo Contribuyente: </TD>
+<TD class=bg colSpan=3>CONTRATOS COLABORACION EMPRESARIAL</TD></TR>
+<TR>
+<TD class=bgn>Nombre Comercial: </TD>
+<TD class=bg>-</TD></TR>
+<TR>
+<TD class=bgn>Fecha de Inscripción: </TD>
+<TD class=bg>09/12/2019</TD>
+<TD class=bgn width="27%">Fecha Inicio de Actividades:</TD>
+<TD class=bg>05/12/2019</TD></TR>
+<TR>
+<TD class=bgn>Estado del Contribuyente: </TD>
+<TD class=bg>ACTIVO</TD>
+<TD class=bgn></TD></TR>
+<TR>
+<TD class=bgn>Condición del Contribuyente:</TD>
+<TD class=bg>HABIDO </TD></TR>
+<TR>
+<TD class=bgn>Dirección del Domicilio Fiscal:</TD>
+<TD class=bg colSpan=3>AV. REPUBLICA DE COLOMBIA NRO. 791 (FRENTE AL COLEGIO ALFONSO UGARTE) LIMA - LIMA - SAN ISIDRO</TD></TR>
+<TR>
+<TD class=bgn>Sistema de Emisión de Comprobante:</TD>
+<TD class=bg>COMPUTARIZADO</TD>
+<TD class=bgn>Actividad de Comercio Exterior:</TD>
+<TD class=bg>IMPORTADOR/EXPORTADOR</TD></TR>
+<TR>
+<TD class=bgn>Sistema de Contabilidad:</TD>
+<TD class=bg colSpan=3>COMPUTARIZADO</TD></TR>
+<TR>
+<TD class=bgn>Actividad(es) Económica(s):</TD>
+<TD class=bg colSpan=3>Principal - 4390 - OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCIÓN<BR><!--SC003-2015 Inicio--><!--SC003-2015 Fin--><!--SC003-2015 Fin--></TD></TR>
+<TR>
+<TD class=bgn>Comprobantes de Pago c/aut. de impresión (F. 806 u 816): </TD>
+<TD class=bg colSpan=3><BR>GUIA DE REMISION - REMITENTE </TD></TR><!--ICR Inicio Cambios 23/11/2010 -->
+<TR>
+<TD class=bgn>Sistema de Emisión Electrónica: </TD>
+<TD class=bg colSpan=3><BR>FACTURA PORTAL DESDE 02/01/2020 </TD></TR>
+<TR>
+<TD class=bgn>Afiliado al PLE desde: </TD>
+<TD class=bg colSpan=3>- </TD></TR><!--ICR Fin Cambios 23/11/2010 -->
+<TR>
+<TD class=bgn>Padrones :</TD>
+<TD class=bg colSpan=3><!-- JRR - 20/09/2010 - Se añade cambio de Igor --><!--  -->NINGUNO </TD></TR></TBODY></TABLE>
+<DIV></DIV></DIV></TD></TR></TBODY></TABLE><SPAN id=div_estrep style="DISPLAY: block">
+<TABLE class=form-table cellSpacing=2 cellPadding=2 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=middle align=center>
+<FORM method=post name=forminfoHist action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitInforHist() class=form-button type=submit value="Información Histórica" name=submit> <INPUT type=hidden value=getinfHis name=accion> <INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> </FORM></TD>
+<TD vAlign=middle align=center>
+<FORM method=post name=formInfoDeudaCoactiva action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitInforHist() class=form-button type=submit value="Deuda Coactiva" name=submit> <INPUT type=hidden value=getInfoDC name=accion> <INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> </FORM></TD>
+<TD vAlign=middle align=center>
+<FORM method=post name=formInfoOmisionTributaria action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitInforHist() class=form-button type=submit value="Omisiones Tributarias" name=submit> <INPUT type=hidden value=getInfoOT name=accion> <INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> </FORM></TD>
+<TD vAlign=middle align=center>
+<FORM method=post name=formNumTrabajd action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitInforHist() class=form-button type=submit value="Cantidad de Trabajadores y/o Prestadores de Servicio" name=submit> <INPUT type=hidden value=getCantTrab name=accion> <INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> </FORM></TD></TR>
+<TR class=showScreen align=center vAlign=middle>
+<TD vAlign=middle align=center>
+<FORM method=post name=formActPro action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitActPro() class=form-button type=submit value="Actas Probatorias"> <INPUT type=hidden value=getActPro name=accion> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> <INPUT type=hidden value=20605620061 name=nroRuc> </FORM></TD>
+<TD vAlign=middle align=center>
+<FORM method=post name=formActCPF action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitActCPF() class=form-button type=submit value="Facturas Fisicas"> <INPUT type=hidden value=getActCPF name=accion> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> <INPUT type=hidden value=20605620061 name=nroRuc> </FORM></TD><!--Ralvarado Ocultado a peticion de Galindes - Inicio--><!--Ralvarado Ocultado a peticion de Galindes - Fin--></TR>
+<TR class=showScreen align=center vAlign=middle>
+<TD vAlign=middle align=center>
+<FORM method=post name=formRepLeg action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitRepLeg() class=form-button type=submit value="Representante(s) Legal(es)"> <INPUT type=hidden value=getRepLeg name=accion> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> <INPUT type=hidden value=20605620061 name=nroRuc> </FORM></TD>
+<TD vAlign=middle align=center>
+<FORM method=post name=formLocAnex action=/cl-ti-itmrconsruc/jcrS00Alias><INPUT onclick=submitLocAnex() class=form-button type=submit value="Establecimiento(s) Anexo(s)" name=submit> <INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value=getLocAnex name=accion> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> </FORM></TD></TR>
+<TR>
+<TD vAlign=middle colSpan=4 align=center>
+<DIV class=buttonbar>
+<SCRIPT language=JavaScript src="/a/js/js.js"></SCRIPT>
+<LINK rel=stylesheet href="/a/css/estilos2_0.css">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR align=center>
+<TD></TD>
+<TD><A onclick=" Imprimible();" href="#"><IMG border=0 src="/a/imagenes/impresora.gif" align=absMiddle> Version Imprimible </A></TD>
+<TD class=bgn vAlign=middle><BR>
+<FORM onsubmit="return validaemail(this)" method=post name=formEnviar action=/cl-ti-itmrconsruc/jcrS00Alias target=mainFrame><!--inicio modificacion rmanriq1--><INPUT type=hidden value=20605620061 name=nroRuc> <INPUT type=hidden value="CONSORCIO NUEVO LIMATAMBO" name=desRuc> <!--fin modificacion rmanriq1--><INPUT type=hidden value=enviar name=accion> <INPUT type=hidden value=datosRuc name=pagina> <INPUT type=hidden name=correo> <IMG border=0 src="/a/imagenes/lgcorreo.gif" align=absMiddle> &nbsp; e-mail <INPUT name=email> <INPUT class=form-button type=submit value=enviar> </FORM></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></SPAN>
+<TABLE cellPadding=0 width="100%" align=center border=0>
+<TBODY>
+<TR>
+<TD><SPAN id=div_progress style="DISPLAY: none"><LINK rel=stylesheet href="/a/css/estilos2_0.css">
+<SCRIPT type=text/javascript languaje="JavaScript">
+
+function activarAvance(){
+    window.setInterval("avance()",20)
+}
+
+function avance(){
+    lin1.style.pixelWidth=lin1.style.pixelWidth<700?lin1.style.pixelWidth + 2:0;
+}
+</SCRIPT>
+
+<TABLE height="100%" width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE width="100%" align=center border=0>
+<TBODY>
+<TR>
+<TD><B class=warn>Por favor espere un momento...</B></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=bottom>
+<TABLE align=center border=0>
+<TBODY>
+<TR>
+<TD id=lin1 style="BACKGROUND-COLOR: #b0c4de" height=18></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></SPAN></TD></TR></TBODY></TABLE><WL:CACHE timeout="1d" name="JSPPieDePagina"><LINK rel=stylesheet href="/a/css/estilos2_0.css">
+<TABLE class=form-table cellSpacing=0 cellPadding=5 width="100%">
+<TBODY>
+<TR>
+<TD><!--
+<div align="center">
+<ADDRESS>
+<p class="bg">Para sugerencias y consultas sobre el sitio web comun&iacute;quese con:<br>
+<IMG height=32 src="/a/imagenes/lgcorreo.gif" width=32> <A href="mailto:Webmaster@sunat.gob.pe">Webmaster@sunat.gob.pe</A>
+</p>
+</ADDRESS>
+</div>-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TH class=bgn>Copyright © SUNAT 1997 - 2020</TH></TR>
+<TR>
+<TD width="100%" align=right><A href="http://www.sunat.gob.pe/inicio.htm" target=_parent><IMG border=0 alt=Inicio src="/a/imagenes/sunatpc.jpg" align=bottom></A> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></WL:CACHE>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+         xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+         xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
+  <cbc:ID>F001-00000338</cbc:ID>
+  <cbc:IssueDate>2019-06-22</cbc:IssueDate>
+  <cbc:IssueTime>11:20:36</cbc:IssueTime>  
+  
+  <cbc:InvoiceTypeCode listID="0101"
+                       listAgencyName="PE:SUNAT"
+                       listName="Tipo de Documento"
+                       name="Tipo de Operacion"
+                       listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01"
+                       listSchemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51">0101</cbc:InvoiceTypeCode>
+					   
+  <cbc:Note languageLocaleID="1000"><![CDATA[TRES CIENTOS  CON 00/100 SOL]]></cbc:Note>
+  <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha"
+                          listName="Currency"
+                          listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>							  
+  <cac:Signature>
+    <cbc:ID>20538236021</cbc:ID>
+	<cbc:Note>Elaborado por Sistema de Emision Electronica Facturador SUNAT (SEE-SFS) 1.2</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6"
+                schemeName="Documento de Identidad"
+                schemeAgencyName="PE:SUNAT"
+                schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CYBER POWER]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+         <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+		 <cbc:CitySubdivisionName><![CDATA[PEREGRINOS]]></cbc:CitySubdivisionName>
+         <cbc:CityName><![CDATA[LIMA]]></cbc:CityName>
+         <cbc:CountrySubentity><![CDATA[LIMA]]></cbc:CountrySubentity>
+		 <cbc:CountrySubentityCode><![CDATA[150117]]></cbc:CountrySubentityCode>
+         <cbc:District><![CDATA[LOS OLIVOS]]></cbc:District>	
+		 <cac:AddressLine>
+			<cbc:Line><![CDATA[CALLE, LOS ALHELIS MZ F LT 9 URB. PEREGRINOS LOS OLIVOS - LIMA]]></cbc:Line>
+		 </cac:AddressLine>		 
+         <cac:Country>
+          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+         </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>	
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6"
+                schemeName="Documento de Identidad"
+                schemeAgencyName="PE:SUNAT"
+                schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20510528540</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[GLOBE SEAWEED INTERNATIONAL S.A.C.]]></cbc:RegistrationName>
+		<cac:RegistrationAddress>
+          <cbc:AddressTypeCode>-</cbc:AddressTypeCode>
+		  <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>-</cbc:CityName>
+          <cbc:CountrySubentity>-</cbc:CountrySubentity>
+		  <cbc:CountrySubentityCode><![CDATA[040110]]></cbc:CountrySubentityCode>
+          <cbc:District>-</cbc:District>
+		  <cac:AddressLine>
+			<cbc:Line><![CDATA[AV. REP.DE PANAMA NRO. 5685 INT. 204 URB. SAN ANTONIO (OFIC. 204.2DO PISO) LIMA - LIMA - MIRAFLORES]]></cbc:Line>
+		  </cac:AddressLine>	
+          <cac:Country>
+           <cbc:IdentificationCode>PE</cbc:IdentificationCode>      
+          </cac:Country>
+        </cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+    </cac:Party>		
+  </cac:AccountingCustomerParty>
+  
+  
+
+
+  <!-- Inicio Tributos cabecera-->	
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">45.76</cbc:TaxAmount>  
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">254.24</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">45.76</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153"
+                    schemeName="Codigo de tributos"
+                    schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+	</cac:TaxTotal>	
+	<!-- Fin Tributos  Cabecera-->
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">254.24</cbc:LineExtensionAmount>	
+	<cbc:TaxInclusiveAmount currencyID="PEN">300.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="PEN">0</cbc:AllowanceTotalAmount>
+	<cbc:ChargeTotalAmount currencyID="PEN">0</cbc:ChargeTotalAmount>	
+	<cbc:PrepaidAmount currencyID="PEN">0.00</cbc:PrepaidAmount>	
+	<cbc:PayableAmount currencyID="PEN">300.00</cbc:PayableAmount>  
+  </cac:LegalMonetaryTotal> 
+   <cac:InvoiceLine>
+<cbc:ID>1</cbc:ID>	 
+	<cbc:InvoicedQuantity unitCode="NIU"
+                          unitCodeListID="UN/ECE rec 20"
+                          unitCodeListAgencyName="United Nations Economic Commission for Europe">3.00</cbc:InvoicedQuantity>
+	<cbc:LineExtensionAmount currencyID="PEN">254.24</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">100.00</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio"
+                           listAgencyName="PE:SUNAT"
+                           listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+	 </cac:PricingReference>
+
+
+	<!-- Inicio Tributos -->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">45.76</cbc:TaxAmount>	  
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">254.24</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">45.76</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" 
+          							  listName="Afectacion del IGV" 
+          							  listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>     
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153"
+                    schemeName="Codigo de tributos"
+                    schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+
+    </cac:TaxTotal>	
+	<!-- Fin Tributos -->	
+    <cac:Item>
+      <cbc:Description><![CDATA[ADAPTADOR ALFA USB  XH-LUXURY 9DBI]]></cbc:Description>
+	  <cac:SellersItemIdentification>
+        <cbc:ID>1</cbc:ID>
+	  </cac:SellersItemIdentification>
+	  
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">84.75</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>

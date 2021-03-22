@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<SummaryDocuments xmlns="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1" 
+				  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				  xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+				  xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+				  xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" 
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				  xsi:schemaLocation="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1 UBLPE-SummaryDocuments-1.0.xsd">                 
+<ext:UBLExtensions>
+
+		<ext:UBLExtension>
+			<ext:ExtensionContent></ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>        
+ <cbc:UBLVersionID></cbc:UBLVersionID>
+ <cbc:CustomizationID></cbc:CustomizationID>
+ <cbc:ID></cbc:ID>
+ <cbc:ReferenceDate></cbc:ReferenceDate>
+ <cbc:IssueDate></cbc:IssueDate>
+ <cac:Signature>
+    <cbc:ID></cbc:ID>
+    <cbc:Note>Elaborado por el Sistema de Gestion SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+        <cac:PartyIdentification>
+          <cbc:ID></cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name><![CDATA[]]></cbc:Name>
+        </cac:PartyName>
+        <cac:AgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID></cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name><![CDATA[]]></cbc:Name>
+          </cac:PartyName>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
+          </cac:PartyLegalEntity>
+        </cac:AgentParty>
+      </cac:SignatoryParty>
+      <cac:DigitalSignatureAttachment>
+        <cac:ExternalReference>
+          <cbc:URI>SIGN</cbc:URI>
+        </cac:ExternalReference>
+      </cac:DigitalSignatureAttachment>
+ </cac:Signature>  
+ <cac:AccountingSupplierParty>
+  <cbc:CustomerAssignedAccountID></cbc:CustomerAssignedAccountID>
+  <cbc:AdditionalAccountID></cbc:AdditionalAccountID>
+  <cac:Party>
+    <cac:PartyLegalEntity>
+      <cbc:RegistrationName><![CDATA[]]></cbc:RegistrationName>
+    </cac:PartyLegalEntity>
+  </cac:Party>
+  </cac:AccountingSupplierParty>  
+    </SummaryDocuments>  
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

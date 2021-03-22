@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<SummaryDocuments xmlns="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1 UBLPE-SummaryDocuments-1.0.xsd">                 
+<ext:UBLExtensions>
+
+		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>CpneIaIOL+PyeQHvOyUUjVrnblQ=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">bSiNzw9JQs38uz15vK0hqOnKb1Af92j74M4ai8hVGT1nB0rZ7tjW1jknYw1bRRGveCnbpnq68JyLwj73KUlEdl7X6k3Vz1/QxJ3DguvL2V/oJNtNsmasZqOtnWp0Nf3W+/1DoFI2Oi3qevUZNR6RWigv+uoVOYz8AuhS7wB2dCbwek3Ye5fctQzeE1qaT+N64h3Xp1iYFlw+xNlDokTrivzdtS8GbHMfYkmzopJBq9VF7fDAtGQRp+5EenUaElZgR8N8BDMOcxDvLRpVqfpkoPfPcDgfPgxDFP3ercT8MBaW9lj1UytY1UZ+FcGpf84lrr6mq+gbjC6EoVmy0n0q7A==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=CORPORACION CYBER POWER SAC, OID.2.5.4.97=20538236021, OU=Issued by AC CAMERFIRMA PERÚ SAC ER [PE1], OU=GERENCIA, T=GERENTE GENERAL, S=LIMA - LIMA, L=LOS OLIVOS, SERIALNUMBER=DNI:44374504, SN=ROSAS AGUILAR, G=MEYLAN, CN=MEYLAN ROSAS AGUILAR, E=jaime.lopez@cyberpowerperu.com</X509SubjectName><X509Certificate>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</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>        
+ <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+ <cbc:CustomizationID>1.1</cbc:CustomizationID>
+ <cbc:ID>RC-20200911-0005</cbc:ID>
+ <cbc:ReferenceDate>2020-09-11</cbc:ReferenceDate>
+ <cbc:IssueDate>2020-09-11</cbc:IssueDate>
+ <cac:Signature>
+    <cbc:ID>20538236021</cbc:ID>
+    <cbc:Note>Elaborado por el Sistema de Gestion SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+        <cac:PartyIdentification>
+          <cbc:ID>20538236021</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name><![CDATA[CYBER POWER]]></cbc:Name>
+        </cac:PartyName>
+        <cac:AgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>20538236021</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+          </cac:PartyName>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:RegistrationName>
+          </cac:PartyLegalEntity>
+        </cac:AgentParty>
+      </cac:SignatoryParty>
+      <cac:DigitalSignatureAttachment>
+        <cac:ExternalReference>
+          <cbc:URI>SIGN</cbc:URI>
+        </cac:ExternalReference>
+      </cac:DigitalSignatureAttachment>
+ </cac:Signature>  
+ <cac:AccountingSupplierParty>
+  <cbc:CustomerAssignedAccountID>20538236021</cbc:CustomerAssignedAccountID>
+  <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
+  <cac:Party>
+    <cac:PartyLegalEntity>
+      <cbc:RegistrationName><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:RegistrationName>
+    </cac:PartyLegalEntity>
+  </cac:Party>
+  </cac:AccountingSupplierParty>  
+      <sac:SummaryDocumentsLine>
+	<cbc:LineID>1</cbc:LineID>
+    <cbc:DocumentTypeCode>03</cbc:DocumentTypeCode>
+    <cbc:ID>B001-00000021</cbc:ID>
+    <cac:AccountingCustomerParty>
+      <cbc:CustomerAssignedAccountID>-</cbc:CustomerAssignedAccountID>
+      <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
+    </cac:AccountingCustomerParty>
+    <!--  Documento que modifica -->
+	
+    <!--  Datos de Percepcion - PER -->
+	<!-- PER -->
+	
+    <cac:Status>
+      <cbc:ConditionCode>3</cbc:ConditionCode>
+    </cac:Status>
+    <!--Total Importe Total-->
+    <sac:TotalAmount currencyID="PEN">34.75</sac:TotalAmount>
+	
+    <!--Total Venta Operaciones Gravadas - 01 -->
+    <sac:BillingPayment>
+      <cbc:PaidAmount currencyID="PEN">29.45</cbc:PaidAmount>
+      <cbc:InstructionID>01</cbc:InstructionID>
+    </sac:BillingPayment>
+	<!-- fin 01 -->	
+	
+	    <!--Total Venta Operaciones Exoneradas - 02 -->
+	<!-- fin 02 -->  	
+	
+	    <!--Total Venta Operaciones Inafectas - 03 -->
+	<!-- fin 03 --> 	
+	
+	    <!--Total Venta Operaciones Gratuitas - 05 -->
+	<!-- fin 05 -->	
+	
+	<!--Total SUMATORIO OTROS CARGOS - Cargos-->
+	<!-- fin Cargos -->
+	
+	<!-- TOTAL ISC-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>2000</cbc:ID>
+            <cbc:Name>ISC</cbc:Name>
+            <cbc:TaxTypeCode>EXC</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <!-- TOTAL IGV-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">5.30</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">5.30</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <!--Total OTROS TRIBUTOS-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>9999</cbc:ID>
+            <cbc:Name>OTROS</cbc:Name>
+            <cbc:TaxTypeCode>OTH</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>	
+  </sac:SummaryDocumentsLine>
+             </SummaryDocuments>  
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

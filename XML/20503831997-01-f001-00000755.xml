@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+  
+  		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>PqAkA6hIud0bvhy015RFBg5KzZ4=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">nJ9BHpYUvG2tPsxcTi8Eo66Ban08JB2oylxEElPr+nAmHnYEwC1LPkcE7wIt5TYyVyCy/6rxqx4q3AnyCbeTRroIPRvdEqt6aJTHZKQqqGdbEPjQ57ekD0d8UVKkBySayAxtiR+0HB9kkAjUe22vSVRoPTQ+wAIIRINdDNownCiXRa5VVbORkOtlvEuIqgWI4T8jSqX7NyKN28YTzxSTy8Spy6TCQVbsFQEhLg/RO+H71q4KtkI8b3i/6weSLWnBM1L0YbOLxxDi3plfviQCw+Zqn7K4HQWMBoPKJPEVCQ/ftNpm9ze6d+CQOuo2pjv/PaPfHG9Onvd2+SM3e4nmxw==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=CORPORACION CYBER POWER SAC, OID.2.5.4.97=20538236021, OU=Issued by AC CAMERFIRMA PERÚ SAC ER [PE1], OU=GERENCIA, T=GERENTE GENERAL, S=LIMA - LIMA, L=LOS OLIVOS, SERIALNUMBER=DNI:44374504, SN=ROSAS AGUILAR, G=MEYLAN, CN=MEYLAN ROSAS AGUILAR, E=jaime.lopez@cyberpowerperu.com</X509SubjectName><X509Certificate>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</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
+  <cbc:ID>F001-00000755</cbc:ID>
+  <cbc:IssueDate>2020-09-11</cbc:IssueDate>
+  <cbc:IssueTime>08:41:29</cbc:IssueTime>  
+  
+  <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="Tipo de Documento" name="Tipo de Operacion" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01" listSchemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51">01</cbc:InvoiceTypeCode>
+					   
+  <cbc:Note languageLocaleID="1000"><![CDATA[DIEZ CON 00/100 SOL]]></cbc:Note>
+  <cbc:DocumentCurrencyCode listAgencyName="United Nations Economic Commission for Europe" listID="ISO 4217 Alpha" listName="Currency">PEN</cbc:DocumentCurrencyCode>	
+  <cac:Signature>
+    <cbc:ID>20538236021</cbc:ID>
+	<cbc:Note>Elaborado por el Sistema de Gestión SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeAgencyName="PE:SUNAT" schemeID="6" schemeName="Documento de Identidad" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CYBER POWER]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+         <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+		 <cbc:CitySubdivisionName><![CDATA[PEREGRINOS]]></cbc:CitySubdivisionName>
+         <cbc:CityName><![CDATA[LIMA]]></cbc:CityName>
+         <cbc:CountrySubentity><![CDATA[LIMA]]></cbc:CountrySubentity>
+		 <cbc:CountrySubentityCode><![CDATA[150117]]></cbc:CountrySubentityCode>
+         <cbc:District><![CDATA[LOS OLIVOS]]></cbc:District>	
+		 <cac:AddressLine>
+			<cbc:Line><![CDATA[CALLE, LOS ALAMOS 165 OF 301 B URB. PEREGRINOS DEL SEÑOR LOS OLIVOS - LIMA]]></cbc:Line>
+		 </cac:AddressLine>		 
+         <cac:Country>
+          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+         </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>	
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20503831997</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[ILIFIT SAC]]></cbc:RegistrationName>
+		<cac:RegistrationAddress>
+          <cbc:AddressTypeCode>-</cbc:AddressTypeCode>
+		  <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>-</cbc:CityName>
+          <cbc:CountrySubentity>-</cbc:CountrySubentity>
+		  <cbc:CountrySubentityCode><![CDATA[070101]]></cbc:CountrySubentityCode>
+          <cbc:District>-</cbc:District>
+		  <cac:AddressLine>
+			<cbc:Line><![CDATA[CALLE LOA CEIBOS  177 LA URB CAMACHO LA MOLINA                                                                                                                                                                                                            ]]></cbc:Line>
+		  </cac:AddressLine>	
+          <cac:Country>
+           <cbc:IdentificationCode>PE</cbc:IdentificationCode>      
+          </cac:Country>
+        </cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+    </cac:Party>		
+  </cac:AccountingCustomerParty>
+  
+  
+
+
+  <!-- Inicio Tributos cabecera-->	
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">1.53</cbc:TaxAmount>  
+    	<cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">8.47</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">1.53</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>  
+              </cac:TaxTotal>	
+   <!-- Fin Tributos  Cabecera--> 
+ <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">8.47</cbc:LineExtensionAmount>	
+	<cbc:TaxInclusiveAmount currencyID="PEN">10.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="PEN">0</cbc:AllowanceTotalAmount>
+	<cbc:ChargeTotalAmount currencyID="PEN">0</cbc:ChargeTotalAmount>	
+	<cbc:PrepaidAmount currencyID="PEN">0.00</cbc:PrepaidAmount>	
+	<cbc:PayableAmount currencyID="PEN">10.00</cbc:PayableAmount>  
+  </cac:LegalMonetaryTotal> 
+  <cac:InvoiceLine>
+<cbc:ID>1</cbc:ID>	 
+	<cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">1.00</cbc:InvoicedQuantity>
+	<cbc:LineExtensionAmount currencyID="PEN">8.47</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">10.00</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+	 </cac:PricingReference>
+
+
+	<!-- Inicio Tributos -->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">1.53</cbc:TaxAmount>	  
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">8.47</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">1.53</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>     
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+
+    </cac:TaxTotal>	
+	<!-- Fin Tributos -->	
+    <cac:Item>
+      <cbc:Description><![CDATA[ADAPTADOR MAXNET WIRELESS USB 50 MBPS]]></cbc:Description>
+	  <cac:SellersItemIdentification>
+        <cbc:ID>5</cbc:ID>
+	  </cac:SellersItemIdentification>
+	  
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">8.47</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

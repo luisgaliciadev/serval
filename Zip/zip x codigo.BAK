@@ -1,0 +1,46 @@
+SET PATH TO FULLPATH(CURDIR())
+SET CLASSLIB TO 'zip' ADDITIVE 
+
+
+*!* Creamos el objeto
+oZip=CREATEOBJECT('Zip.Zip')
+
+
+*!* CREAR UN ARCHIVO ZIP
+WITH oZip
+	.ArchivoZip='C:\PRUEBA.ZIP'	&& Ruta y nombre del archivo ZIP
+	
+	NOTE : archivos a incluir en el zip, ara mas de uns archivo separar por | , CHR(124) ;
+		   si se tratara de un solo archivo seria asi :	.ArchivosIncluir='C:\ARCHIVO1.TXT';
+		   para incluir todos los archivos que empiecen con la letra "A" usariamos algo asi;
+		   .ArchivosIncluir='C:\A*.TXT', si quicieramos ingresar todos los archivos de una carpeta;
+		   seria asi .ArchivosIncluir='C:\MiCarpeta\*.*'
+		   
+	.ArchivosIncluir='C:\ARCHIVO1.TXT|C:\ARCHIVO2.TXT'	&& Archivos a inlcuir 
+	
+	.Contraseña='contraseña'	&& Proteger el zip con una contraseña, Opcional
+	.Comentario='Mi Comentario'	&& Comentario del ZIP
+	
+	?'---------------------'
+	?'Comprimiendo archivo ZIP '
+	?.Comprimir()	&& Crear el zip y mostrar en pantalla la cantidad e archivos procesoados 
+	?'---------------------'
+ENDWITH 
+
+
+*!* DESCOMPRIMIR UN ARCHIVO ZIP
+WITH oZip
+	.ArchivoZip='C:\prueba.zip'	&& Ruta y nombre del archivo ZIP
+	.DirectorioDestino='C:\TEMP'	&& Directorio de destino del contenido del ZIP
+	.Contraseña='contraseña'	&& Contraseña para desproteger el zip
+	
+	?'---------------------'
+	?'Descomprimiendo archivo ZIP'
+	? .Descomprimir()	&& Descomprimir el zip y mostrar en pantalla la cantidad e archivos procesoados 
+	?'---------------------'
+ENDWITH
+
+
+	
+	
+ 

@@ -1,0 +1,13 @@
+Declare Integer WSAStartup In wsock32;
+ Integer wVerRq, String @lpWSAData
+
+Declare Integer WSACleanup In wsock32
+
+Declare Integer gethostname In wsock32;
+ String @Name, Integer namelen
+
+Declare Integer gethostbyname In wsock32;
+ String HostName
+
+Declare RtlMoveMemory In kernel32 As Heap2Str;
+ String @, Integer, Integer

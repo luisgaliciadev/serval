@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<CreditNote xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ext:UBLExtensions>
+  
+  		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QkkwtxoLwMit/HjhBhxE9Mi4nmw=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">yIY6PO4+k3m4HRRuLDADPXYcprHXKQYHbnNAkQrKNG/Po+moHk0KO6QD62TDnDtYJkTmhtsUDuHxFPyJkRT7xkgbRIEF3AUw4G1juR+YJMkhfpF3utEdQBAQKpK8/ZyUrce5ZQcm3q936SI8nPYX2uND1+XMWXho/51+ST5TGVJNUJUdmXJ3xOJekHOgA69oKtKqZxp7U53aMQ8zH5Krnx5byqnLEcKVLJhTx0FQqB9VT7SjEoRucdvf4M9fNf1EWBJcW8HnH/YSnZ3XFkIxqVok4AXBUQSWs+jvQ9nVl+6Mgh+00FglfNKgIdYBYXovraNeugwCffGArErdzZKFoQ==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=CORPORACION CYBER POWER S.A.C, OID.2.5.4.97=20538236021, OU=Issued by SENDA TI SOLUTIONS [PE1], OU=SISTEMAS, T=SOPORTE TECNICO, S=LIMA - LIMA, L=LOS OLIVOS, SERIALNUMBER=DNI:43492965, SN=LOPEZ GALLARDO, G=JAIME GONZALO, CN=JAIME GONZALO LOPEZ GALLARDO, E=jaime.lopez@cyberpowerperu.com</X509SubjectName><X509Certificate>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</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>2.0</cbc:CustomizationID>
+  <cbc:ID>F001-00000013</cbc:ID>
+  <cbc:IssueDate>2020-03-13</cbc:IssueDate>
+  <cbc:IssueTime>09:20:15</cbc:IssueTime>  					   
+  <cbc:Note languageLocaleID="1000"><![CDATA[NOVENTA Y SIETE CON 45/100 SOL]]></cbc:Note>
+  <cbc:DocumentCurrencyCode listAgencyName="United Nations Economic Commission for Europe" listID="ISO 4217 Alpha" listName="Currency">PEN</cbc:DocumentCurrencyCode>	
+  <cac:DiscrepancyResponse>
+    <cbc:ReferenceID>F001-00000602</cbc:ReferenceID>
+    <cbc:ResponseCode>01</cbc:ResponseCode>
+    <cbc:Description>Anulación de la operación
+</cbc:Description>
+  </cac:DiscrepancyResponse>
+
+  <cac:BillingReference>
+    <cac:InvoiceDocumentReference>
+      <cbc:ID>F001-00000602</cbc:ID>
+      <cbc:DocumentTypeCode>01</cbc:DocumentTypeCode>
+    </cac:InvoiceDocumentReference>
+  </cac:BillingReference>
+  
+  
+  <cac:Signature>
+    <cbc:ID>20538236021</cbc:ID>
+	<cbc:Note>Elaborado por el Sistema de Gestión SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SIGN</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20538236021</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name><![CDATA[CORPORACION CYBER POWER SAC]]></cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[CYBER POWER]]></cbc:RegistrationName>
+        <cac:RegistrationAddress>
+         <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+		 <cbc:CitySubdivisionName><![CDATA[PEREGRINOS]]></cbc:CitySubdivisionName>
+         <cbc:CityName><![CDATA[LIMA]]></cbc:CityName>
+         <cbc:CountrySubentity><![CDATA[LIMA]]></cbc:CountrySubentity>
+		 <cbc:CountrySubentityCode><![CDATA[150117]]></cbc:CountrySubentityCode>
+         <cbc:District><![CDATA[LOS OLIVOS]]></cbc:District>	
+		 <cac:AddressLine>
+			<cbc:Line><![CDATA[CALLE, LOS ALAMOS 165 OF 302 URB. PEREGRINOS LOS OLIVOS - LIMA]]></cbc:Line>
+		 </cac:AddressLine>		 
+         <cac:Country>
+          <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+         </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>	
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20521910764</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName><![CDATA[QUANAM PERU S.A.C.]]></cbc:RegistrationName>
+		<cac:RegistrationAddress>
+          <cbc:AddressTypeCode>-</cbc:AddressTypeCode>
+		  <cbc:CitySubdivisionName>-</cbc:CitySubdivisionName>
+          <cbc:CityName>-</cbc:CityName>
+          <cbc:CountrySubentity>-</cbc:CountrySubentity>
+		  <cbc:CountrySubentityCode><![CDATA[070101]]></cbc:CountrySubentityCode>
+          <cbc:District>-</cbc:District>
+		  <cac:AddressLine>
+			<cbc:Line><![CDATA[AV. LA ENCALADA NRO. 1388 DPTO. 1102 LIMA - LIMA - SANTIAGO DE SURCO]]></cbc:Line>
+		  </cac:AddressLine>	
+          <cac:Country>
+           <cbc:IdentificationCode>PE</cbc:IdentificationCode>      
+          </cac:Country>
+        </cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+    </cac:Party>		
+  </cac:AccountingCustomerParty>
+  
+  
+
+
+  <!-- Inicio Tributos cabecera-->	
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">14.87</cbc:TaxAmount>  
+    	<cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">82.58</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">14.87</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+                </cac:TaxTotal>	
+   <!-- Fin Tributos  Cabecera-->  
+ <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">82.58</cbc:LineExtensionAmount>	
+	<cbc:TaxInclusiveAmount currencyID="PEN">97.45</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="PEN">0.00</cbc:AllowanceTotalAmount>
+	<cbc:ChargeTotalAmount currencyID="PEN">0</cbc:ChargeTotalAmount>	
+	<cbc:PayableAmount currencyID="PEN">97.45</cbc:PayableAmount>  
+  </cac:LegalMonetaryTotal> 
+  <cac:CreditNoteLine>
+<cbc:ID>1</cbc:ID>	 
+	<cbc:CreditedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">5.00</cbc:CreditedQuantity>
+	<cbc:LineExtensionAmount currencyID="PEN">82.58</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">19.49</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+	 </cac:PricingReference>
+
+
+	<!-- Inicio Tributos -->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">14.87</cbc:TaxAmount>	  
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">82.58</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">14.87</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>18</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>     
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>	
+	<!-- Fin Tributos -->	
+    <cac:Item>
+      <cbc:Description><![CDATA[ADAPTADOR GENERICO IDE A SATA]]></cbc:Description>
+	  <cac:SellersItemIdentification>
+        <cbc:ID>3</cbc:ID>
+	  </cac:SellersItemIdentification>
+	  
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">16.52</cbc:PriceAmount>
+    </cac:Price>
+  </cac:CreditNoteLine>
+</CreditNote>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

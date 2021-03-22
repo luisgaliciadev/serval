@@ -1,0 +1,6 @@
+LPARAMETERS vln_signo,vln_val
+IF vln_signo=0
+	RETURN vln_val
+ELSE
+	RETURN vln_val*-1
+ENDIF 

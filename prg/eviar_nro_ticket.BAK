@@ -1,0 +1,76 @@
+PARAMETER nro_ticket,_rutaxml, _nombrearchivose, femodo, rucsol, usuariosol, clavesol, _urlws,ruta_cdr_local,ruta_cdr_server,ruta_rpta_server
+SET STEP ON
+ PUBLIC rptawsticket
+ rptawsticket = "ERROR"
+ ls_ruc_emisor = rucsol
+ ls_user = ls_ruc_emisor+usuariosol
+ ls_pwd_sol = clavesol
+
+ TEXT TO ls_envioxml TEXTMERGE NOSHOW PRETEXT 0015 FLAGS 1
+	<soapenv:Envelope xmlns:ser="http://service.sunat.gob.pe" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			
+		<soapenv:Header>
+			<wsse:Security>
+				<wsse:UsernameToken>
+					<wsse:Username><<ls_user>></wsse:Username>
+					<wsse:Password><<ls_pwd_sol>></wsse:Password>
+				</wsse:UsernameToken>
+			</wsse:Security>
+		</soapenv:Header>
+		<soapenv:Body>
+			<ser:sendSummary>
+				<fileName><<ls_fileName>></fileName>
+				<contentFile><<ls_base64>></contentFile>
+			</ser:sendSummary>
+		</soapenv:Body>				
+	</soapenv:Envelope>
+	
+	<soapenv:Header>
+		<wsse:Security>
+	 		<wsse:UsernameToken>
+	 			<wsse:Username><<ls_user>></wsse:Username>
+	 			<wsse:Password><<ls_pwd_sol>></wsse:Password>
+			</wsse:UsernameToken>
+	 	</wsse:Security>
+	 </soapenv:Header>
+	 <soapenv:Body>
+		 <ser:getStatus>
+	 		<ticket><<nro_ticket>></ticket>
+	 	</ser:getStatus>
+	 </soapenv:Body>
+	</soapenv:Envelope>
+
+ ENDTEXT
+ oxmlhttp = CREATEOBJECT("MSXML2.ServerXMLHTTP.6.0")
+ oxmlbody = CREATEOBJECT('MSXML2.DOMDocument.6.0')
+ *IF  .NOT. (oxmlbody.loadxml(ls_envioxml))
+ *   oresp.mensaje = "No se cargo XML: "+oxmlbody.parseerror.reason
+  *  rptawsticket = "<message>ERROR NO SE CARGO XML<message>"
+ *   RETURN rptawsticket
+* ENDIF
+ lsurl = _urlws
+ *MESSAGEBOX(lsurl)
+ oxmlhttp.open('POST', lsurl, .F.)
+ oxmlhttp.setrequestheader("Content-Type", "text/xml")
+ oxmlhttp.setrequestheader("Content-Type", "text/xml;charset=ISO-8859-1")
+ oxmlhttp.setrequestheader("Content-Length", LEN(ls_envioxml))
+ oxmlhttp.setrequestheader("SOAPAction", "sendSummary")
+ oxmlhttp.setoption(2, 13056)
+ oxmlhttp.send(oxmlbody.documentelement.xml)
+ IF (oxmlhttp.status<>200)
+    rptawsticket = '<message>ERROR EN EL ENVIO</message> '+'<httpstatus>'+ALLTRIM(STR(oxmlhttp.status))+'</httpstatus>'+'-'+NVL(oxmlhttp.responsetext, '')
+    RETURN rptawsticket
+ ENDIF
+ loxmlresp = CREATEOBJECT("MSXML2.DOMDocument.6.0")
+ loxmlresp.loadxml(oxmlhttp.responsetext)
+ ccontenidorptazip = STREXTRACT(oxmlhttp.responsetext, "<applicationResponse>", "</applicationResponse>")
+ STRTOFILE(STRCONV(ccontenidorptazip, 14), ruta_cdr_local+"R-"+_nombrearchivose+".zip")
+ STRTOFILE(STRCONV(ccontenidorptazip, 14), ruta_cdr_server+"R-"+_nombrearchivose+".zip") 
+ STRTOFILE(STRCONV(ccontenidorptazip, 14), ruta_rpta_server+"R-"+_nombrearchivose+".zip")
+ *rptawsticket = STREXTRACT(oxmlhttp.responsetext, "<ticket>", "</ticket>")
+ rptawsticket = '<message>ENVIADO</message> '+'<httpstatus>'+ALLTRIM(STR(oxmlhttp.status))+'</httpstatus>'+'-'+NVL(oxmlhttp.responsetext, '')
+ RETURN rptawsticket
+
+
+	

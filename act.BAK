@@ -1,0 +1,15 @@
+*PROCEDURE launchProgram(pcProgramLocation) 
+LPARAMETERS pcProgramLocation
+ * 
+ LOCAL cCurrentFolder,cProgramFolder 
+ cCurrentFolder = SET("DEFAULT") + CURDIR() 
+ cProgramFolder = JUSTPATH(pcProgramLocation) 
+
+ LOCAL oWSH 
+ oWSH = CREATEOBJECT("WScript.Shell") 
+ SET DEFAULT TO (cProgramFolder) 
+ oWSH.Run(pcProgramLocation,0,.T.) 
+ SET DEFAULT TO (cCurrentFolder) 
+ * 
+ QUIT 
+*ENDPROC 

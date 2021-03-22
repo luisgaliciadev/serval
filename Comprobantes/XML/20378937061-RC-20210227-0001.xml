@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->
+<SummaryDocuments xmlns="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:sunat:names:specification:ubl:peru:schema:xsd:SummaryDocuments-1 UBLPE-SummaryDocuments-1.0.xsd">                 
+<ext:UBLExtensions>
+
+		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature Id="SignatureSP"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>6sCF4U5nFg8akA//cCYIeB4+GEI=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">TjqyD4eCFJtyNEIjc4smzx3E6Dag27QazOAfXCJSN7MPKJgn2NjPlCAnHGnbBRsSdsQVb+lE2BHjVfkbwyhdXoAPxdfy/XvHM7eLeQAvFzFMlB9ljlkIHw+6bM/5LF7DU6WIvOwU5ZZWXWHtpxA/GfwZZRiWs8flhFt1wCQRW/3RL92MWteBzIT+9NZFV+2WopbLKyzAdLcWxx6/j6tHcwvVEmExZajxMRxSu/gsbnRsUMO8rfeSAK5YgwZdT+44+VVNYR6CCilYLzObswMhSWGMiDmh2ZNPBUhGOBymofHbKVLwQ2emayihMgbpkSjkjjbRDinCj+N/05VbqSOHzg==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data><X509SubjectName>C=PE, O=NEGOCIACIONES J.C.A S.R.L, OID.2.5.4.97=20378937061, OU=Issued by SENDA TI SOLUTIONS [PE1], OU=GERENCIA, T=GERENTE GENERAL, S=LIMA - LIMA, L=SAN JUAN DE LURIGANCHO, SERIALNUMBER=DNI:25512115, SN=SALINAS IPARRAGUIRRE, G=CALIXTO MANUEL, CN=CALIXTO MANUEL SALINAS IPARRAGUIRRE, E=calixto.salinas@eltriangulo.com.pe</X509SubjectName><X509Certificate>MIIKlTCCCH2gAwIBAgIJV0+p3hbG3wYEMA0GCSqGSIb3DQEBCwUAMIIBIjELMAkGA1UEBhMCUEUxDTALBgNVBAgMBExJTUExDTALBgNVBAcMBExJTUExPTA7BgNVBAsMNHNlZSBjdXJyZW50IGFkZHJlc3MgYXQgd3d3LmNhbWVyZmlybWEuY29tLnBlL2FkZHJlc3MxMDAuBgNVBAsMJ0FDIENBTUVSRklSTUEgUEVSw5ogQ0VSVElGSUNBRE9TIC0gMjAxNjEUMBIGA1UEBRMLMjA1NjYzMDI0NDcxGjAYBgNVBGEMEU5UUlBFLTIwNTY2MzAyNDQ3MSAwHgYDVQQKDBdDQU1FUkZJUk1BIFBFUsOaIFMuQS5DLjEwMC4GA1UEAwwnQUMgQ0FNRVJGSVJNQSBQRVLDmiBDRVJUSUZJQ0FET1MgLSAyMDE2MB4XDTE5MDkyNDE1MjMzOFoXDTIyMDkyMzE1MjMzOFowggGIMTEwLwYJKoZIhvcNAQkBFiJjYWxpeHRvLnNhbGluYXNAZWx0cmlhbmd1bG8uY29tLnBlMSwwKgYDVQQDDCNDQUxJWFRPIE1BTlVFTCBTQUxJTkFTIElQQVJSQUdVSVJSRTEXMBUGA1UEKgwOQ0FMSVhUTyBNQU5VRUwxHTAbBgNVBAQMFFNBTElOQVMgSVBBUlJBR1VJUlJFMRUwEwYDVQQFEwxETkk6MjU1MTIxMTUxHzAdBgNVBAcMFlNBTiBKVUFOIERFIExVUklHQU5DSE8xFDASBgNVBAgMC0xJTUEgLSBMSU1BMRgwFgYDVQQMDA9HRVJFTlRFIEdFTkVSQUwxETAPBgNVBAsMCEdFUkVOQ0lBMSswKQYDVQQLDCJJc3N1ZWQgYnkgU0VOREEgVEkgU09MVVRJT05TIFtQRTFdMRQwEgYDVQRhDAsyMDM3ODkzNzA2MTEiMCAGA1UECgwZTkVHT0NJQUNJT05FUyBKLkMuQSBTLlIuTDELMAkGA1UEBhMCUEUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxkar3Uzgq7nRq2JDzBcIY7yuzj7ejRAN4nEPwcDsKkEwPOblFPzK19WNPXdxA2Dcbwz4f5ICDSqAYgVgjKZpOSGH4TzIy+Nm9j+3yG8xBZBj1NDzYjjvQPbxKr6yUjDZaaWQZIMX1ojLK94/J8UAa6y2TMtwJI3rQ2zZigfiQAoPpWlqkMCMjwqVdc29acxf4JxZSFHw/BeZne9AopGAt2XOStY6lbBx6G+k0E4iTZW9BMXV0lUgXT6m2HEoG0whBysYz7ecJ8zxpVdmh4Pnwtfe7U/Ve6bVl3gFp2kK+TUGSpjw5xwh728tdwpEYT3QzwGrMoFMoHduMQwebf+wjAgMBAAGjggRiMIIEXjAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIGwDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwHQYDVR0OBBYEFKMf/wHnlofc0Mzx3Tcmfr9a2T+GMIGNBggrBgEFBQcBAQSBgDB+MFQGCCsGAQUFBzAChkhodHRwOi8vd3d3LmNhbWVyZmlybWEuY29tL2NlcnRzL2FjX2NhbWVyZmlybWFfcGVydV9jZXJ0aWZpY2Fkb3MtMjAxNi5jcnQwJgYIKwYBBQUHMAGGGmh0dHA6Ly9vY3NwLmNhbWVyZmlybWEuY29tMIIBQgYDVR0jBIIBOTCCATWAFDpuZRjnVtLk8y3dpXxybf8w4YYnoYIBEKSCAQwwggEIMQswCQYDVQQGEwJFUzEPMA0GA1UECAwGTUFEUklEMQ8wDQYDVQQHDAZNQURSSUQxQjBABgNVBAsMOXNlZSBjdXJyZW50IGFkZHJlc3MgYXQgaHR0cHM6Ly93d3cuY2FtZXJmaXJtYS5jb20vYWRkcmVzczEjMCEGA1UECwwaQUMgQ0FNRVJGSVJNQSBQRVLDmiAtIDIwMTYxEjAQBgNVBAUTCUE4Mjc0MzI4NzEYMBYGA1UEYQwPVkFURVMtQTgyNzQzMjg3MRswGQYDVQQKDBJBQyBDQU1FUkZJUk1BIFMuQS4xIzAhBgNVBAMMGkFDIENBTUVSRklSTUEgUEVSw5ogLSAyMDE2ggkAjGpF9TOqN0YwgaAGA1UdHwSBmDCBlTBIoEagRIZCaHR0cDovL2NybC5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMEmgR6BFhkNodHRwOi8vY3JsMS5jYW1lcmZpcm1hLmNvbS9hY19jYW1lcmZpcm1hX3BlcnVfY2VydGlmaWNhZG9zLTIwMTYuY3JsMIHVBgNVHREEgc0wgcqBImNhbGl4dG8uc2FsaW5hc0BlbHRyaWFuZ3Vsby5jb20ucGWkgaMwgaAxHjAcBgorBgEEAYGHLh4HDA5DQUxJWFRPIE1BTlVFTDEXMBUGCisGAQQBgYcuHggMB1NBTElOQVMxHDAaBgorBgEEAYGHLh4JDAxJUEFSUkFHVUlSUkUxRzBFBgorBgEEAYGHLh4KDDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMBwGA1UdEgQVMBOBEWNhQGNhbWVyZmlybWEuY29tMIGQBgNVHSAEgYgwgYUwgYIGDCsGAQQBgYcuHhAAATByMCkGCCsGAQUFBwIBFh1odHRwczovL3BvbGljeS5jYW1lcmZpcm1hLmNvbTBFBggrBgEFBQcCAjA5DDdDRVJUSUZJQ0FETyBERSBQRVJTT05BIEZJU0lDQSBDT04gVklOQ1VMQUNJT04gQSBFTVBSRVNBMA0GCSqGSIb3DQEBCwUAA4ICAQAhlsVy432ps4Odhi9gtjjJKQCj+mqANfq1K2yfk/hM9LY+0ziiCUfJ7k7yEf70UJL9HLFdvVVYGp/rvpMkSnAgEg2I/JuoB1eWHjjhvL9M26g1qdZbXynM5O4zMAysliAv3uMzmO2NQbbZinhaJOas9Va+n8mvb+CUT2/QnGA7Ki4FdtKjy2X5uZfrb+/+FRgG17IEJNICxt7rhIh5jhwYGzIvvyt0HgA88qxKUSRVE5+dVKqxAEZyBsFUBkNN/i5XPfyS9J2fRA/1xOs9ska+k8AEALKO2l0QDmzHNHqOdkDJeNSDixGTBNQmCcImWgmlccPY6ApnBNL94sxGdo2D0AovkfpPba2CwIHNBUkjMez7++PJObtSPD6kj7sxfD4F1IBBTt94UiezeduWcs9fiy23YNNRGk+stB82qJCpulshPzs6yiYMlZtgmFqYTLaJXd/JYtw8SgSBUvAkDGa57IwjX31kKdM6ED/PgD/t36GT2mQgGUlCIz/QMJNzjAppILorDglY6uNhl1ypW7901a339xY+bh/fIv0xuchQV34qUqjjE73GcY7oS8b8eZXrfoxmwMNLSaDRFSKrqhZqyRZOvLOs6xFFM5WjemzJxCsPw5xL+3y0YDV7Rxun4H/pQSL8XX6HR9Jy4LAGPIoXSCU/7muB+5cRSfSuvmGifw==</X509Certificate></X509Data></KeyInfo></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>        
+ <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+ <cbc:CustomizationID>1.1</cbc:CustomizationID>
+ <cbc:ID>RC-20210227-0001</cbc:ID>
+ <cbc:ReferenceDate>2021-02-27</cbc:ReferenceDate>
+ <cbc:IssueDate>2021-02-27</cbc:IssueDate>
+ <cac:Signature>
+    <cbc:ID>20378937061</cbc:ID>
+    <cbc:Note>Elaborado por el Sistema de Gestion SERVAL</cbc:Note>
+    <cac:SignatoryParty>
+        <cac:PartyIdentification>
+          <cbc:ID>20378937061</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name><![CDATA[CYBER POWER]]></cbc:Name>
+        </cac:PartyName>
+        <cac:AgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>20378937061</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name><![CDATA[NEGOCIACIONES J.C.A S.R.L]]></cbc:Name>
+          </cac:PartyName>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName><![CDATA[NEGOCIACIONES J.C.A S.R.L]]></cbc:RegistrationName>
+          </cac:PartyLegalEntity>
+        </cac:AgentParty>
+      </cac:SignatoryParty>
+      <cac:DigitalSignatureAttachment>
+        <cac:ExternalReference>
+          <cbc:URI>SIGN</cbc:URI>
+        </cac:ExternalReference>
+      </cac:DigitalSignatureAttachment>
+ </cac:Signature>  
+ <cac:AccountingSupplierParty>
+  <cbc:CustomerAssignedAccountID>20378937061</cbc:CustomerAssignedAccountID>
+  <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
+  <cac:Party>
+    <cac:PartyLegalEntity>
+      <cbc:RegistrationName><![CDATA[NEGOCIACIONES J.C.A S.R.L]]></cbc:RegistrationName>
+    </cac:PartyLegalEntity>
+  </cac:Party>
+  </cac:AccountingSupplierParty>  
+      <sac:SummaryDocumentsLine>
+	<cbc:LineID>1</cbc:LineID>
+    <cbc:DocumentTypeCode>03</cbc:DocumentTypeCode>
+    <cbc:ID>B001-00011199</cbc:ID>
+    <cac:AccountingCustomerParty>
+      <cbc:CustomerAssignedAccountID>-</cbc:CustomerAssignedAccountID>
+      <cbc:AdditionalAccountID>0</cbc:AdditionalAccountID>
+    </cac:AccountingCustomerParty>
+    <!--  Documento que modifica -->
+	
+    <!--  Datos de Percepcion - PER -->
+	<!-- PER -->
+	
+    <cac:Status>
+      <cbc:ConditionCode>1</cbc:ConditionCode>
+    </cac:Status>
+    <!--Total Importe Total-->
+    <sac:TotalAmount currencyID="PEN">5.90</sac:TotalAmount>
+	
+    <!--Total Venta Operaciones Gravadas - 01 -->
+    <sac:BillingPayment>
+      <cbc:PaidAmount currencyID="PEN">5.00</cbc:PaidAmount>
+      <cbc:InstructionID>01</cbc:InstructionID>
+    </sac:BillingPayment>
+	<!-- fin 01 -->	
+	
+	    <!--Total Venta Operaciones Exoneradas - 02 -->
+	<!-- fin 02 -->  	
+	
+	    <!--Total Venta Operaciones Inafectas - 03 -->
+	<!-- fin 03 --> 	
+	
+	    <!--Total Venta Operaciones Gratuitas - 05 -->
+	<!-- fin 05 -->	
+	
+	<!--Total SUMATORIO OTROS CARGOS - Cargos-->
+	<!-- fin Cargos -->
+	
+	<!-- TOTAL ISC-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>2000</cbc:ID>
+            <cbc:Name>ISC</cbc:Name>
+            <cbc:TaxTypeCode>EXC</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <!-- TOTAL IGV-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">0.90</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">0.90</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <!--Total OTROS TRIBUTOS-->
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">0</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>9999</cbc:ID>
+            <cbc:Name>OTROS</cbc:Name>
+            <cbc:TaxTypeCode>OTH</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>	
+  </sac:SummaryDocumentsLine>
+             </SummaryDocuments>  
+<!--Corporacion Cyber Power S.A.C. / www.cyberpowerperu.com-->

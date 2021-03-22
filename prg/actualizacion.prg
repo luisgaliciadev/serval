@@ -1,0 +1,273 @@
+_SCREEN.VISIBLE = .F.
+application.Visible = .F.
+
+
+*!*	*/////////////////////////////////////////////////////////////////////////////////
+*!*	*// CHEQUEO DE EXCLUSIVIDAD DE INSTANCIA!!
+*!*	*/////////////////////////////////////////////////////////////////////////////////
+*!*	* basicamente lo que hace es buscar una ventana que tenga el mismo titulo y si lo encuentra
+*!*	* significa que otra instancia ya se cargo previamente, hay una funcion API no recuerdo bien
+*!*	* el nombre creo que se llamaba BingOnTop que te trae la ventana cuando esta no esta
+*!*	* seleccionada
+*!*	DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
+*!*	_aclass=NULL
+*!*	_aname= [Inicio SBS Romanas]
+*!*	_XAppwhd=WAPIFWindow( @_aclass, @_aname )
+*!*	CLEAR DLLS
+*!*	IF _XAppwhd!=0
+*!*		SET PROCEDURE TO
+*!*		SET LIBRARY TO
+*!*		MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
+*!*		CLOSE ALL
+*!*		CLEAR event
+*!*		CLOSE DATABASES
+*!*		RETURN
+*!*	ENDIF
+
+*!*	DECLARE INTEGER FindWindow IN WIN32API AS WAPIFWindow STRING @,STRING @
+*!*	_aclass=NULL
+*!*	_aname= [SBS - Basculas]
+*!*	_XAppwhd=WAPIFWindow( @_aclass, @_aname )
+*!*	CLEAR DLLS
+*!*	IF _XAppwhd!=0
+*!*		SET PROCEDURE TO
+*!*		SET LIBRARY TO
+*!*		MESSAGEBOX( [Disculpe, el sistema ya está abierto.], 16, [Mensaje del Sistema] )
+*!*		CLOSE ALL
+*!*		CLEAR event
+*!*		CLOSE DATABASES
+*!*		RETURN
+*!*	ENDIF
+
+*!*	RELEASE _aclass
+*!*	*/////////////////////////////////////////////////////////////////////////////////
+
+CLEAR ALL
+CLOSE ALL
+SET TALK OFF
+set date to DMY
+SET DEBUG OFF
+SET ESCAPE OFF
+SET HELP OFF
+SET CENTURY ON
+SET SAFETY OFF
+SET DELETE ON
+SET EXCLUSIVE OFF
+SET SYSMENU OFF
+SET BELL ON
+**----------
+SET RESOURCE off 
+SET REFRESH TO 1,1 
+SET EXCLUSIVE OFF 
+SET UNIQUE OFF 
+SET AUTOSAVE ON 
+SET OPTIMIZE ON 
+SET REPROCESS TO AUTOMATIC 
+SET MULTILOCKS ON 
+
+
+MODIFY WINDOWS SCREEN TITLE ".:: SERVAL - SISTEMA DE GESTION ::."
+
+
+PUBLIC lcAppDir,Vgc_almatrab,Vgc_usuario,nres
+PUBLIC Vlc_numbl,Vlc_numcont,Vlc_nombrebuque,Vlc_numviaje,Vlc_fechaatr,Vgc_cliente2,Vgc_cambiom,Vpc_nuevafecha,Vpn_fecha_desde2,Vpn_fecha_hasta2,Vgc_clic,Vgn_opt,Vgc_cliente2,conex,Vgn_tipousu,lcConnect
+PUBLIC Vgc_clic,Vgn_opt,Vgc_cliente2,conex,Vgn_tipousu,Vgc_serie,Vgc_nomb_usu,Vgn_actual,fg_conectado,Vgn_super_user,VPC_llave 
+Vgn_super_user=0
+fg_conectado=0
+Vgn_actual=0
+Vgc_cliente2=""
+Vgc_serie=""
+conex=0
+Vgn_tipousu=0
+lcAppDir = upper(ADDBS(SYS(5) + SYS(2003)))
+Vgc_almatrab=""
+Vgc_nomb_usu=""
+Vgc_usuario=""
+Vgc_clic =0
+Vgn_opt=1
+conex=0
+*
+*---------------------
+
+Local cnControladorArch,nTamaño,cCadena
+cnControladorArch = FOPEN(lcAppDir+"config.txt")
+*cnControladorArch = FOPEN("c:\config.txt")
+nTamaño =  FSEEK(cnControladorArch, 0, 2)    && Lleva el puntero a EOF.
+IF nTamaño <= 0
+	MESSAGEBOX("Este archivo está vacío.")
+ELSE
+  = FSEEK(cnControladorArch, 0, 0)     && Mueve el puntero a BOF.
+cCadena = FREAD(cnControladorArch, nTamaño)
+ENDIF
+= FCLOSE(cnControladorArch)   
+
+aux=AT("$",cCadena,1)
+Vgc_server=SUBSTR(cCadena,1,aux-1)
+aux2=AT("$",cCadena,2)
+Vgc_bd=SUBSTR(cCadena,aux+1,aux2-aux-1)
+*Vgc_ip_lector=SUBSTR(cCadena,aux2+1,LEN(cCadena)-aux2)
+*---------------------
+
+lcparServidor=Vgc_server
+lcparDataBase =Vgc_bd
+Vcl_conex = "driver={SQL Server};"+; 
+"server=" + lcparServidor + ";"+; 
+"database="+lcparDataBase+";"+;
+" UID=serval; pwd=Cybers@c1;trusted_connection=no;" 
+Conex=SQLSTRINGCONNECT(Vcl_conex)
+*!*	IF Conex > 0 THEN 
+*!*			
+		SET DEFAULT TO FULLPATH(lcAppDir)
+		*OPEN DATABASE FULLPATH(lcAppDir+"data\bppc.dbc")
+		SET PATH TO "data,formularios,ing,ico,botones,clase,prg,reportes,archivos,menu"
+
+*!*		****VERIFICAR EL SERIAL DEL DISCO
+*!*		Vlc_disco = LEFT( lcAppDir, 2)
+*!*		loFSO = CREATEOBJECT("Scripting.FileSystemObject")
+*!*		lcSerialNumber = lofso.drives(Vlc_disco).serialnumber 
+*!*		*messagebox((lcSerialNumber))
+*!*		*****FIN VERIFICAR SERIAL DEL DISCO
+*!*						
+*!*		****NOMBRE PC	
+*!*		Vlc_nom_pc=SUBSTR(SYS(0),1,AT('#',SYS(0))-2)
+*!*		****FIN NOMBRE PC
+
+*!*		****NOMBRE MAC
+*!*		LOCAL lcComputerName, loWMIService, loItems, loItem, lcMACAddress,Vlc_mac
+*!*		Vpc_mac_a=''
+*!*		lcComputerName = "."
+*!*		loWMIService = GETOBJECT("winmgmts:\\" + lcComputerName + "\root\cimv2")
+*!*		loItems = loWMIService.ExecQuery("Select * from Win32_NetworkAdapter",,48)
+
+*!*		FOR EACH loItem IN loItems
+*!*		lcMACAddress = loItem.MACAddress
+*!*			IF !ISNULL(lcMACAddress)		
+*!*				IF EMPTY(Vpc_mac_a)
+*!*					Vpc_mac_a = ALLTRIM(UPPER(loItem.MACAddress))
+*!*					*MESSAGEBOX(Vpc_mac_a)
+*!*				ENDIF   
+*!*				
+*!*			ENDIF
+*!*		ENDFOR
+*!*		***FIN NOMBRE MAC
+
+*!*		*****VERIFICO KEY EN ARCHIVO TXT
+*!*		Local cnControladorArch2,nTamaño2,cCadena2
+*!*		cnControladorArch2 = FOPEN(lcAppDir+"data\temp\temp130713\temp.txt")
+*!*		nTamaño2 =  FSEEK(cnControladorArch2, 0, 2)    && Lleva el puntero a EOF.
+*!*		IF nTamaño2 <= 0
+*!*			*MESSAGEBOX("Este archivo está vacío.")
+*!*			cCadena2 =''
+*!*		ELSE
+*!*		  = FSEEK(cnControladorArch2, 0, 0)     && Mueve el puntero a BOF.
+*!*		cCadena2 = FREAD(cnControladorArch2, nTamaño2)
+*!*		VPC_llave = cCadena2
+*!*		ENDIF
+*!*		= FCLOSE(cnControladorArch2)   
+*!*		*********FIN VERIFICO KEY EN ARCHIVO TXT	
+
+
+*!*		lsql="select dbo.fn_desencripta(?cCadena2) as llave_desencriptada"
+*!*		resp=SQLEXEC(conex,lsql,"llave_des")
+*!*		SELECT llave_des
+*!*		Vlc_llave_desencriptada=ALLTRIM(llave_desencriptada)
+*!*		
+*!*		lsql="select * from TEMP_TERMINALES"
+*!*		resp=SQLEXEC(conex, lsql, "TEMP_TERMINALES")
+*!*		IF resp>0
+*!*			SET EXACT ON 
+*!*			SELECT TEMP_TERMINALES
+*!*			LOCATE FOR UNIQUE_KEY = ALLTRIM(Vlc_llave_desencriptada) OR MAC_ADDRES = ALLTRIM(Vpc_mac_a)
+*!*			IF FOUND()		
+*!*				Vlc_UNIQUE_KEY = ALLTRIM(UNIQUE_KEY)
+*!*				lsql="select dbo.fn_encripta(?Vlc_UNIQUE_KEY) as llave_encriptada"
+*!*				resp=SQLEXEC(conex,lsql,"llave")
+*!*				
+*!*				IF nTamaño2 <= 0	
+*!*					SELECT llave
+*!*					Vlc_llave_encriptada=ALLTRIM(llave_encriptada)	
+*!*					lcFile=lcAppDir+"data\temp\temp130713\temp.txt"
+*!*					*lcCadena=(STR(lcSerialNumber))+'&'+ALLTRIM(Vlc_UNIQUE_KEY)
+*!*					lcCadena=ALLTRIM(Vlc_llave_encriptada)			
+*!*					Strtofile( lcCadena, lcFile ,1)
+*!*					
+*!*					lsql = "UPDATE TEMP_TERMINALES SET SERIAL_NUMBER= ?lcSerialNumber, STATUS = 1, STATION = ?Vlc_nom_pc, ACTIVATION_DATE=getdate(), MAC_ADDRES=?Vpc_mac_a WHERE UNIQUE_KEY = ?Vlc_llave_encriptada"
+*!*					resp=SQLEXEC(conex, lsql)
+*!*					IF resp<0
+*!*						MESSAGEBOX("Disculpe, error en la consulta, por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de conexión")
+*!*						RETURN 
+*!*					ENDIF					
+*!*				ELSE
+*!*					SELECT llave
+*!*					Vlc_llave_encriptada=ALLTRIM(llave_encriptada)	
+*!*							
+*!*					lsql = "UPDATE TEMP_TERMINALES SET SERIAL_NUMBER= ?lcSerialNumber, STATUS = 1, STATION = ?Vlc_nom_pc, ACTIVATION_DATE=getdate(), MAC_ADDRES=?Vpc_mac_a WHERE UNIQUE_KEY = ?Vlc_UNIQUE_KEY"
+*!*					resp=SQLEXEC(conex, lsql)
+*!*					IF resp<0
+*!*						MESSAGEBOX("Disculpe, error en la consulta, por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de conexión")
+*!*						RETURN 
+*!*					ENDIF					
+*!*					ENDIF			
+*!*					USE IN TEMP_TERMINALES
+*!*					USE IN LLAVE_DES					
+*!*					DO FORM inicio
+*!*					READ EVENTS	
+*!*					*MESSAGEBOX('listo')			
+*!*			ELSE
+*!*				IF nTamaño2 <= 0
+*!*					SELECT TEMP_TERMINALES
+*!*					LOCATE FOR STATUS  = 0
+*!*						IF FOUND()
+*!*							*IF nTamaño2 <= 0		
+*!*								Vlc_UNIQUE_KEY = ALLTRIM(UNIQUE_KEY)
+*!*								lsql="select dbo.fn_encripta(?Vlc_UNIQUE_KEY) as llave_encriptada"
+*!*								resp=SQLEXEC(conex,lsql,"llave")
+*!*								SELECT llave
+*!*								Vlc_llave_encriptada=ALLTRIM(llave_encriptada)				
+*!*								
+*!*								lcFile=lcAppDir+"data\temp\temp130713\temp.txt"
+*!*								*lcCadena=(STR(lcSerialNumber))+'&'+ALLTRIM(Vlc_UNIQUE_KEY)
+*!*								lcCadena=ALLTRIM(Vlc_llave_encriptada)			
+*!*								Strtofile( lcCadena, lcFile ,1)	
+*!*												
+*!*								lsql = "UPDATE TEMP_TERMINALES SET SERIAL_NUMBER= ?lcSerialNumber, STATUS = 1, STATION = ?Vlc_nom_pc, ACTIVATION_DATE=getdate(), MAC_ADDRES=?Vpc_mac_a WHERE UNIQUE_KEY = ?Vlc_UNIQUE_KEY"
+*!*								resp=SQLEXEC(conex, lsql)
+*!*								IF resp<0
+*!*									MESSAGEBOX("Disculpe, error en la consulta, por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de conexión")
+*!*									RETURN 
+*!*								ENDIF
+*!*								USE IN TEMP_TERMINALES
+*!*								USE IN LLAVE_DES					
+*!*								DO FORM actualizacion
+*!*								READ EVENTS							
+*!*						ELSE
+*!*								MESSAGEBOX("Disculpe, Error en LICENCIA, por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de Licencia")
+*!*								RETURN
+*!*						ENDIF
+*!*				ELSE
+*!*					MESSAGEBOX("Disculpe, Error en LICENCIA, por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de Licencia")
+*!*					RETURN
+*!*				ENDIF 		
+*!*			ENDIF 
+*!*		ELSE
+*!*			MESSAGEBOX("Disculpe, error en la consulta por favor comunicarse con el Soporte Tecnico del Sistema .",0+16,"Error de conexión")
+*!*			RETURN 
+*!*		ENDIF 			
+*!*			
+*!*	ELSE
+*!*		MESSAGEBOX("Disculpe, error de conexion con el servidor de base de datos Soporte Tecnico del Sistema .",0+16,"Error de conexión")
+*!*		RETURN 
+*!*	ENDIF 
+*!*	************FIN ERROR CONEXION SERVER
+
+DO FORM actualizacion
+READ EVENTS	
+
+
+
+
+
+
+
+
+

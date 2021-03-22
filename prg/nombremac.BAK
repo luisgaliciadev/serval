@@ -1,0 +1,22 @@
+FUNCTION MacAddress
+SET STEP ON
+Local pGUID,rGUID,lnSize
+Declare integer CoCreateGuid in 'OLE32.dll' ;
+  string @pguid
+Declare integer StringFromGUID2 in 'OLE32.dll' ;
+  string rguid, string @lpsz, integer cchMax
+pGUID=replicate(chr(0),16)
+rGUID=replicate(chr(0),80)
+
+If "5." $ OS() && 2000/XP
+  Declare integer UuidCreateSequential in 'RPCRT4.dll'  string @ Uuid
+  Return substr( iif( UuidCreateSequential(@pGUID) = 0 ;
+    and StringFromGUID2(pGUID,@rGUID,40) # 0, ;
+    StrConv(left(rGUID,76),6), "" ), 26,12)
+Else
+  Return substr( iif( CoCreateGuid(@pGUID) = 0 ;
+    and StringFromGUID2(pGUID,@rGUID,40) # 0, ;
+    StrConv(left(rGUID,76),6), "" ), 26,12)
+ENDIF
+
+
